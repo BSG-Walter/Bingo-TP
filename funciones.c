@@ -65,7 +65,7 @@ void asignarCartonManualmente(int v[3][5])
     //elijo primero guardarlo en un vector de 1 dimension para aprovechar la funcion de buscar numeros repetidos
     for(int i = 0; i < 15; i++)
     {
-        do
+        do//este do while se repite hasta que el numero sea del 1 al 90 y que no sea repetido
         {
             printf("Escriba un numero del 1 al 90 sin repetir(%d/15)\n", i+1);
             scanf("%d",&num);
