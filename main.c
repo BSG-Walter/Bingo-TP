@@ -14,8 +14,8 @@ int main()
         //las siguentes lineas son para elegir la cantidad de cartones
         printf("Bienvenido al bingo\n\n");
         printf("Escribe 1 para solo usar un carton\n");
-        printf("Escribe 2 para solo usar dos cartones\n");
-        printf("Escribe 3 para solo usar tres cartones\n");
+        printf("Escribe 2 para usar dos cartones\n");
+        printf("Escribe 3 para usar tres cartones\n");
         printf("Una ves formado tu carton presiona 0\n");
         scanf("%d",&cantCarton);
 
@@ -61,25 +61,25 @@ int main()
             switch(cantCarton)
             {
                 case 1:
-                    asignarCarton(carton1);
+                    asignarCartonManualmente(carton1);
                     dibujarCarton(carton1, 1);
                     break;
                 case 2:
-                    asignarCarton(carton1);
+                    asignarCartonManualmente(carton1);
                     dibujarCarton(carton1, 1);
 
-                    asignarCarton(carton2);
+                    asignarCartonManualmente(carton2);
                     dibujarCarton(carton2, 2);
                     break;
 
                 case 3:
-                    asignarCarton(carton1);
+                    asignarCartonManualmente(carton1);
                     dibujarCarton(carton1, 1);
 
-                    asignarCarton(carton2);
+                    asignarCartonManualmente(carton2);
                     dibujarCarton(carton2, 2);
 
-                    asignarCarton(carton3);
+                    asignarCartonManualmente(carton3);
                     dibujarCarton(carton3, 3);
                     break;
 

@@ -4,6 +4,9 @@
 //PRE: pide un numero minimo y un numero maximo
 //POST: devuelve un numero aleatorio entre los numeros dados
 int aleatorioEntre(int mini, int maxi);
+//PRE: pide un vector, el tamaño del vector y el numero a comprobar
+//POST: devuelve 1 si el numero indicado ya estaba en el vector, o 0 si no estaba repetido
+int comprobarNumeroRepetidoEnVector(int v[],int tam, int num);
 //PRE: pide un vector declarado sin asignar, el tamaño del vector, un numero minimo y un numero maximo
 //POST: le asigna al vector numeros aleatorios entre el numero minimo y maximo especificado
 void cargarVectorConAleatorios(int v[], int tam, int mini, int maxi);
