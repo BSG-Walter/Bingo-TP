@@ -285,6 +285,7 @@ void jugarBingo(Jugador player, Jugador pc, int cantidadC, int bolitas[])
 
     mostrarBolita(bolitas, bolitasSacadas);
     marcarNumeroEnCartones(player, cantidadC, bolitas[bolitasSacadas]);
+    dibujarCartonesHorizontalmente(player->cartones, cantidadC);
 
     while (bingo == 0)
     {
@@ -358,7 +359,7 @@ void jugarBingo(Jugador player, Jugador pc, int cantidadC, int bolitas[])
                 system("cls");
 
                 printf("Estos son los cartones de la PC:\n");
-                dibujarCartones(pc, cantidadC);
+                dibujarCartonesHorizontalmente(pc->cartones, cantidadC);
             break;
 
             case 5://mostrar puntajes
@@ -379,7 +380,7 @@ void jugarBingo(Jugador player, Jugador pc, int cantidadC, int bolitas[])
                     bolitasSacadas++;
                     mostrarBolita(bolitas, bolitasSacadas);
                     marcarNumeroEnCartones(player, cantidadC, bolitas[bolitasSacadas]);
-                    dibujarCartones(player, cantidadC);
+                    dibujarCartonesHorizontalmente(player->cartones, cantidadC);
                 }
             break;
 

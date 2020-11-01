@@ -153,6 +153,43 @@ void dibujarCarton(Carton cart, int num)
     }
     printf("------------------\n");
 }
+void dibujarCartonesHorizontalmente(Carton cart[], int num)
+{
+    for (int i = 0; i < num; i++) {printf("------------------   ");}//primera linea
+    printf("\n");
+
+    for (int i = 0; i < num; i++) {printf("|    CARTON %d    |   ", i + 1);}//segunda linea
+    printf("\n");
+
+    for (int i = 0; i < num; i++) {printf("------------------   ");}//tercera linea
+    printf("\n");
+
+    for(int i = 0; i < FILAS; i++)
+    {
+        for (int ii = 0; ii < num; ii++)
+        {
+            printf("| ");
+            for (int j = 0; j < COLUMNAS; j++)
+            {
+                if (cart[ii]->marcas[i][j] == 1)
+                {
+                    printf("XX ");
+                }else{
+
+                    if (cart[ii]->numeros[i][j] < 10)//si es menor a 10 dibujamos un 0 para que todos los numeros tengan 2 cifras
+                    {
+                        printf("0");
+                    }
+                    printf("%d ", cart[ii]->numeros[i][j]);
+                }
+            }
+            printf("|   ");
+        }
+        printf("\n");
+    }
+    for (int i = 0; i < num; i++) {printf("------------------   ");}
+    printf("\n");
+}
 
 int comprobarLinea(Carton cart)
 {
