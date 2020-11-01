@@ -22,7 +22,7 @@ void cargarCartonConAleatorios(Carton cart);
 void dibujarCarton(Carton cart, int num); //ESTE ES EL METODO VIEJO, AHORA SE USA LA FUNCION DE ABAJO
 //PRE: Pide el vector de cartones y el numero de cartones
 //POST: Dibuja en consola los cartones horizontalmente, indicando su numero e imprimiendo su contenido
-void dibujarCartonesHorizontalmente(Carton cart[], int num)
+void dibujarCartonesHorizontalmente(Carton cart[], int num);
 
 //------------------------------Busqueda y marcas de numeros------------------------
 //Pre: Precisa un carton cargado y el numero a buscar
